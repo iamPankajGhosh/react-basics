@@ -1,5 +1,6 @@
 function App() {
-  return <h1>React with vite</h1>;
+  const name = "vite";
+  return <h1>React with {name}</h1>;
 }
 
 export default App;
