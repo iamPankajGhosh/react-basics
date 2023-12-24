@@ -3,22 +3,21 @@ import "./App.css";
 
 function App() {
   // let value = 0;
+  const [value, setValue] = useState(0);
+
   const addValue = () => {
     if (value < 20) {
-      value = value + 1;
+      setValue((preValue) => preValue + 1);
+      setValue((preValue) => preValue + 1);
     }
-    setValue(value);
   };
 
   const removeValue = () => {
     if (value > 0) {
-      value = value - 1;
+      setValue(value - 1);
     }
-
-    setValue(value);
   };
 
-  let [value, setValue] = useState(0);
   return (
     <>
       <h1>React Project</h1>
